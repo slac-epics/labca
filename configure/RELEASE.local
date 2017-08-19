@@ -4,5 +4,5 @@
 # See if labca is being built in an EPICS extensions release
 ifneq ($(wildcard $(TOP)/../../configure/CONFIG),)
 # Install to TOP of extensions release
-INSTALL_LOCATION_APP = $(TOP)/../..
+INSTALL_LOCATION_APP := $(abspath $(TOP)/../..)
 endif
