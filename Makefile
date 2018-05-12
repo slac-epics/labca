@@ -5,7 +5,7 @@ DIRS += configure
 DIRS += ezca
 DIRS += glue
 ifndef NO_DOCS
-DIRS += documentation
+#DIRS += documentation
 endif
 ifeq ($(MAKEFOR),MATLAB)
 DIRS += matlab
@@ -36,3 +36,7 @@ tar: images documentation
 
 images:
 	mkdir -p $@
+
+doc:
+	@make -C documentation
+
