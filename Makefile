@@ -21,7 +21,7 @@ tarclean: UNINSTALL_DIRS:=$(filter-out %jar %html %doc,$(UNINSTALL_DIRS))
 
 tarclean: uninstall
 
-tar: TAG:=$(shell git describe)
+tar: TAG:=$(shell git describe --tag)
 
 tar: images documentation
 	@if [ -z "$(TAG)" ] ; then \
