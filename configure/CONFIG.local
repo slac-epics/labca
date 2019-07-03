@@ -1,0 +1,6 @@
+# SLAC CONFIG.local
+ifeq ($(MATLAB_PACKAGE_TOP),)
+ifneq ($(MATLAB_ROOT),)
+	MATLAB_PACKAGE_TOP=$(DIR $(MATLAB_ROOT))
+endif
+endif
