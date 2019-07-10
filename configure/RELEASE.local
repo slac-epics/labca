@@ -1,9 +1,7 @@
 # RELEASE.local
 include $(TOP)/RELEASE_SITE
-MATLAB_VER=2019a
-ifeq ($(MATLAB_PACKAGE_TOP),)
-$(error Please define MATLAB_PACKAGE_TOP to a directory containing matlab version $(MATLAB_VER) )
-endif
+MATLAB_VER=2016b
+MATLAB_PACKAGE_TOP=/afs/slac/package/matlab
 MATLABDIR=$(MATLAB_PACKAGE_TOP)/$(MATLAB_VER)
 ifeq ($(wildcard $(MATLABDIR)),)
 $(error MATLAB_PACKAGE_TOP/$(MATLAB_VER) does not exist! )
