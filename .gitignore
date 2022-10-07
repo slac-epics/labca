@@ -23,3 +23,14 @@ jar
 lca*.xml
 scilab_en_US_help
 master_help.xml
+*~
+*.swp
+build/
+children/build/
+db/
+dbd/
+html/
+templates/
+cdCommands
+envPaths
+tags
