@@ -16,10 +16,10 @@
 
 ##########################################
 ## Tell us where EPICS base is installed
-BASE_SUBDIR=/base/
-EPICS_BASE=$(EPICS_SITE_TOP)$(BASE_SUBDIR)$(BASE_MODULE_VERSION)
 -include $(TOP)/RELEASE_SITE
 -include $(TOP)/configure/RELEASE.local
+EPICS_BASE=$(EPICS_SITE_TOP)/base/$(BASE_MODULE_VERSION)
+#EPICS_BASE=/home/till/epics/base/base-3-14-12
 
 ##########################################
 # For the following definitions

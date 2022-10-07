@@ -155,7 +155,7 @@ SCIEXE=$(or $(SCIEXE_$(OS_CLASS)),$(SCIEXE_DEFAULT))
 #       in base/configure/os/  :-(
 RUNTIME_LDFLAGS=
 
-CROSS_COMPILER_TARGET_ARCHS =
+CROSS_COMPILER_TARGET_ARCHS=rhel6-x86_64 rhel7-x86_64
 
 # use perl for sake of non-cygwin windoze build...
 GITSTRING:=$(shell perl -e 'my $$v=`git describe --always --dirty 2>/dev/null`; \
