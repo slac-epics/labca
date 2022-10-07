@@ -1,0 +1,7 @@
+R3.8.0
+October 7th, 2022
+
+Build from the latest from https://github.com/till-s/epics-labca as of October 7th, 2022
+Note that this include more than just the latest tag (labca_3_8_0) as additional commits have been made to master since then.
+
+The main reason for this release is to build agains Matlab 2020a, and to get a fix to generating help files.
