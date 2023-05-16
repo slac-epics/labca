@@ -1,6 +1,6 @@
 # RELEASE.local
 include $(TOP)/RELEASE_SITE
-MATLAB_VER=2018b
+MATLAB_VER=2020a
 ifeq ($(MATLAB_PACKAGE_TOP),)
 $(error Please define MATLAB_PACKAGE_TOP to a directory containing matlab version $(MATLAB_VER) )
 endif
